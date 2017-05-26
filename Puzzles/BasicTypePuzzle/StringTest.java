@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import Solutions.Palindrome;
+import Solutions.StringAlgos;
 
 public class StringTest
 {
@@ -15,18 +15,18 @@ public class StringTest
 	public void testPalindromeIter()
 	{
 		for( String s : notPalin )
-			assertFalse( Palindrome.isPalinIter(s) );
+			assertFalse( StringAlgos.isPalinIter(s) );
 		
 		for( String s : palin )
-			assertTrue( Palindrome.isPalinIter(s) );
+			assertTrue( StringAlgos.isPalinIter(s) );
 	}
 	
 	public void testPalindromeRecurse()
 	{
 		for( String s : notPalin )
-			assertFalse( Palindrome.isPalinRecurse(s) );
+			assertFalse( StringAlgos.isPalinRecurse(s) );
 		
 		for( String s : palin )
-			assertTrue( Palindrome.isPalinRecurse(s) );
+			assertTrue( StringAlgos.isPalinRecurse(s) );
 	}
 }
