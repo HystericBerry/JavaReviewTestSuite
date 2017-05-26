@@ -6,9 +6,9 @@ import org.junit.Test;
 
 import Collections.Entry;
 import Collections.MutableEntry;
-import ProblemInterfaces.BlackWhiteTiles;
+import Solutions.BlackWhiteTiles;
 
-public class Arithmetic
+public class ArithmeticTest
 {
 	@Test
 	public void testMystery()
