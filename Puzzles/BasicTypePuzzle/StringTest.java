@@ -8,7 +8,7 @@ import Solutions.Palindrome;
 
 public class StringTest
 {
-	private static String[] notPalin = new String[] { null, "ABCXYZ", "ABCXYZ", "ABCXYZ", "ABCXYZ" };
+	private static String[] notPalin = new String[] { null, "ABCXYZ", "cjalsi09342", "lkjhgasdfgh", "abcCBA" };
 	private static String[] palin = new String[] { "abuttuba", "amanaplanacanalpanama", "asantaatnasa", "avid diva" };
 	
 	@Test
