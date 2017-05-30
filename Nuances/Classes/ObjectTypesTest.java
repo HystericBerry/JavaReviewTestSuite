@@ -51,7 +51,6 @@ public class ObjectTypesTest
 				new Rectangle(10, 20, 30, 40),
 				new Rectangle(20, 30, 5, 15)
 		};
-		
 		double expectedVal = 625;
 		double actualVal = MathUtils.average(arr, rectMeas);
 		assertEquals( expectedVal, actualVal, epsilon );
@@ -60,9 +59,22 @@ public class ObjectTypesTest
 		IntegerMeasurer intMeas = new IntegerMeasurer();
 		arr = new Integer[] { new Integer(1), new Integer(2),
 				new Integer(3), new Integer(4) };
-		
 		expectedVal = 10.0 / 4.0;
 		actualVal = MathUtils.average(arr, intMeas);
+		assertEquals( expectedVal, actualVal, epsilon );
+		
+		IntegerMeasurer localMeas = new IntegerMeasurer()
+		{
+			// Override to return the square.
+			@Override
+			public double measure(Object obj)
+			{
+				Integer i = (Integer) obj;
+				return i*i;
+			}
+		};
+		expectedVal = 7.5;
+		actualVal = MathUtils.average(arr, localMeas);
 		assertEquals( expectedVal, actualVal, epsilon );
 	}
 }
