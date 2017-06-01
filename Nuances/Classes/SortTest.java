@@ -29,7 +29,7 @@ public class SortTest
 		
 		Sort.insertionSort(unsorted);
 		
-		for( int i = 0; i < SORTED.size(); ++i  )
+		for( int i = 0; i < SORTED.size(); ++i )
 			assertEquals( SORTED.get(i), unsorted.get(i) );
 	}
 	
@@ -40,7 +40,7 @@ public class SortTest
 		
 		Sort.selectionSort(unsorted);
 		
-		for( int i = 0; i < SORTED.size(); ++i  )
+		for( int i = 0; i < SORTED.size(); ++i )
 			assertEquals( SORTED.get(i), unsorted.get(i) );
 	}
 	
@@ -51,7 +51,7 @@ public class SortTest
 		
 		Sort.bubbleSort(unsorted);
 		
-		for( int i = 0; i < SORTED.size(); ++i  )
+		for( int i = 0; i < SORTED.size(); ++i )
 			assertEquals( SORTED.get(i), unsorted.get(i) );
 	}
 }

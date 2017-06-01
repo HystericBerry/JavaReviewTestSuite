@@ -4,8 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import Collections.Entry;
-import Collections.MutableEntry;
+import Collections.Pair;
 import Solutions.BlackWhiteTiles;
 
 public class ArithmeticTest
@@ -35,11 +34,11 @@ public class ArithmeticTest
 	public void testBlackWhiteTiles()
 	{
 		int TOTAL_WIDTH = 100, TILE_WIDTH = 5;
-		Entry[] expectedVal = new Entry[] { new MutableEntry(10, 9), new MutableEntry(0, 0), new MutableEntry(1, 0) };
+		Pair[] expectedVal = new Pair[] { new Pair(10, 9), new Pair(0, 0), new Pair(1, 0) };
 		// "naive" Implementation
 		for( int i = 0; i < 3; ++i )
 		{
-			Entry blackWhite = null;
+			Pair blackWhite = null;
 			
 			int currTileWidth;
 			for( int j = 0; j < 3; ++j )
